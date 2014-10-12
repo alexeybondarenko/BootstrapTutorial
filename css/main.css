@@ -1,0 +1,158 @@
+
+
+body {
+	background-color: #f1f1f1;
+}
+
+
+/***************
+* Basic layout *
+****************/
+
+nav .nav, .content {
+	background-color: #ffffff;
+}
+nav {
+	margin-bottom: 10px;
+}
+
+/******************
+* Main navigation *
+*******************/
+
+.nav.nav-pills li a {
+	border-radius:0 !important;
+	color: #6c6c6c;
+	padding: 10px 20px;
+}
+.nav.nav-pills li + li {
+	margin-left:0;
+}
+.nav.nav-pills li a:hover {
+	background-color: #f1f1f1;
+}
+.nav.nav-pills li.active a {
+	background-color: #fff59b;
+}
+.nav.nav-pills li.active a:hover {
+	color: inherit;
+}
+
+/**********
+* Sidebar *
+***********/
+
+.sidebar h3 {
+	font-size:16px;
+	margin-bottom:20px;
+}
+.sidebar, .sidebar li a {
+	padding-left: 30px !important;
+}
+.sidebar li a{
+	margin-left:-30px;
+}
+
+.sidebar li + li {
+	margin-top:0;
+}
+.sidebar li.active a:hover {
+	color: inherit;
+}
+.sidebar li a:hover {
+	background-color: rgba(0,0,0,.02);	
+}
+
+/**********
+* Content *
+***********/
+
+.content {
+	padding:0 20px;
+}
+
+/*********
+* Footer *
+**********/
+
+.footer {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.footer-copyright {
+	font-style: italic;
+}
+.footer-refs > div {
+	float:left;
+}
+.footer-refs > div + div {
+	margin-left:10px;
+}
+
+/************
+* Blog post *
+*************/
+
+.blogPost {}
+.blogPost-title {
+	font-size:22px;
+	font-weight:bold;
+}
+.blogPost-title + .blogPost-img {
+	margin-top:10px;
+}
+.blogPost-img, .blogPost-content {
+	margin-top:10px;
+}
+.blogPost-img {}
+.blogPost-content {
+	font-size:14px;
+	line-height: 20px;
+}
+.blogPost-info {
+	margin-top:20px;
+	font-size:14px;
+}
+.blogPost-info:after {
+	content: '';
+	display: table;
+	clear: both
+}
+.blogPost-info > div + div {
+	margin-left:10px;
+}
+.blogPost-info > div {
+	float:left;
+}
+.blogPost-info-date:before, .blogPost-info-tags:before {
+	content: '';
+	display: inline-block;
+}
+.blogPost-info-date {
+	color:#6c6c6c;
+}
+.blogPost-info-date:before {
+	width:15px;
+	height:15px;
+	background: url(../img/time.png) no-repeat;
+}
+.blogPost-info-tags {}
+.blogPost-info-tags:before {
+	width:13px;
+	height:15px;
+	background: url(../img/tags.png) no-repeat;
+}
+.blogPost-readMore {
+	margin-top:20px;
+	background-color: #5591b4;
+	font-weight: bold;
+	font-size:14px;
+	border:0;
+	padding:10px 30px;
+	border-radius: 4px;
+}
