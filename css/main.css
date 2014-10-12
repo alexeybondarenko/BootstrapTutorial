@@ -137,6 +137,16 @@ nav {
 	margin-left:10px;
 }
 
+@media screen and (max-width: 768px) {
+	.footer div {
+		clear: both;
+		margin-left:0 !important;
+	}
+	.footer-refs {
+		margin-top:10px;
+	}
+}	
+
 /************
 * Blog post *
 *************/
@@ -254,10 +264,12 @@ nav {
 	.pagination li  {
 		-webkit-flex: 1;
 				flex: 1;
+
+		margin:0 -1px;
 	}
 	.pagination li:first-child, .pagination li:last-child {
-		-webkit-flex: 2;
-				flex: 2;	
+		-webkit-flex: 1;
+				flex: 1;	
 	}
 	.pagination li a {
 		width:100%;
@@ -283,4 +295,13 @@ nav {
 	left:0;
 	right:0;
 	background: #f1f1f1 url(../img/ux-header.png) center right no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+	.content.content-ux {
+		padding-top:1px;
+	}
+	.content.content-ux:before {
+		display: none;
+	}
 }
