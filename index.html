@@ -10,42 +10,90 @@
 </head>
 <body class="container">
 	<!-- header -->
-	<header>
-		<h1>Алексей Бондаренко</h1>
-		<p>Creative blog</p>
+	<header class="header">
+		<h2 class="header-title">
+			Алексей Бондаренко 
+			<span class="lead">Creative blog</span>
+		</h2>
 	</header>
 	<!-- ./header -->
 	<!-- navigation -->
 	<nav>
 		<ul class="nav nav-pills">
-		  <li class="active"><a href="#">Home</a></li>
-		  <li><a href="#">Profile</a></li>
-		  <li><a href="#">Messages</a></li>
+		  <li><a href="#">Coding</a></li>
+		  <li><a href="#">Design</a></li>
+		  <li><a href="#">Mobile</a></li>
+		  <li><a href="#">Graphics</a></li>
+		  <li class="active"><a href="#">UX design</a></li>
 		</ul>
 	</nav>
 	<!-- ./navigation -->
 	<!-- content row -->
 	<div class="row">
-		<div class="col-xs-8">
+		<div class="col-sm-9 content content-ux">
 			<!-- blog post -->
-			<div class="blog-post">
+			<div class="blogPost">
 				<h2>Мозаичный грунт — актуальная национальная задача</h2>
-				<img src="http://placehold.it/800x400" alt="">
+				<img class="blogPost-img" src="http://placehold.it/800x400" alt="" width="100%">
 				<p>Поверхность раздела фаз неоднозначна. Англо-американский тип политической культуры разрушаем. Механизм власти неизбежен. В соответствии с принципом неопределенности, минерал разрушаем. Политическое учение Н. Макиавелли повышает равновесный постиндустриализм, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться.</p>
+				<div class="blogPost-info">
+					<div class="blogPost-info-date">
+						23 сентября 2014
+					</div>
+					<div class="blogPost-info-tags">
+						<a href="#Prototyping">Prototyping</a>
+						<a href="#Business">Business</a>
+						<a href="#UserExperience">User Exerience</a>
+					</div>
+				</div>
+				<button class="blogPost-readMore btn btn-primary btn-lg">Read more...</button>
 			</div>
 			<!-- ./blog post -->
-		</div>
-		<div class="col-xs-4">
-			<!-- category menu -->
-			<ul class="nav nav-pills nav-stacked">
-			  <li class="active"><a href="#">Home</a></li>
-			  <li><a href="#">Profile</a></li>
-			  <li><a href="#">Messages</a></li>
+			<!-- pagination -->
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
 			</ul>
-			<!-- ./category menu -->
+			<!-- ./paginatrion -->
+		</div>
+		<div class="col-sm-3 hidden-xs sidebar">
+			<!-- categories menu -->
+			<h3>Categories</h3>
+			<ul class="nav nav-pills nav-stacked">
+			  <li class="active"><a href="#">Usability</a></li>
+			  <li><a href="#">User Experience</a></li>
+			  <li><a href="#">UI Design</a></li>
+			  <li><a href="#">E-Commerce</a></li>
+			</ul>
+			<!-- ./categories menu -->
+			<h3>Popular rags</h3>
+			<ul class="nav nav-pills nav-stacked">
+			  <li><a href="#">Usability</a></li>
+			  <li><a href="#">User Experience</a></li>
+			  <li><a href="#">Interaction Design</a></li>
+			  <li><a href="#">UI</a></li>
+			  <li><a href="#">User Research</a></li>
+			</ul>
 		</div>
 	</div>
 	<!-- ./content row -->
-
+	<!-- footer -->
+	<footer class="footer">
+		<p class="footer-copyright">Founded By Alexey Bondarenko, 2014 - future</p>
+		<p class="footer-refs">
+			<div class="footer-refs-country">Made in Ukraine</div>
+			<div class="footer-refs-links">
+				<a href="#">Contact Us</a>
+				<a href="#">Write for us</a>
+				<a href="#">Press</a>
+			</div>
+		</p>
+	</footer>
+	<!-- ./footer -->
 </body>
 </html>
