@@ -2,6 +2,8 @@
 
 body {
 	background-color: #f1f1f1;
+	max-width:1200px;
+	float:left;
 }
 
 
@@ -34,11 +36,14 @@ nav {
 .nav.nav-pills li.active a {
 	background-color: #fff59b;
 }
-.nav.nav-pills li.active a:hover {
+nav .nav.nav-pills li.active a:hover {
 	color: inherit;
 }
 
 @media screen and (max-width: 768px) {
+	nav .nav.nav-pills li a {
+		padding:10px 20px;
+	}
 	.nav-pills {
 		padding:0;
 	}
@@ -75,6 +80,12 @@ nav {
 		background-color: rgba(0,0,0,.2);
 		text-align: center;
 		line-height: 40px;
+	}
+}
+@media screen and (min-width: 768px) {
+	nav .nav.nav-pills li a {
+		padding-top:15px;
+		padding-bottom: 15px;
 	}
 }
 
@@ -202,7 +213,7 @@ nav {
 }
 .blogPost-readMore {
 	margin-top:20px;
-	background-color: #5591b4;
+	background-color: #4891B6;
 	font-weight: bold;
 	font-size:14px;
 	border:0;
@@ -239,14 +250,26 @@ nav {
 .pagination {
 	margin-top:20px;
 }
+.pagination li {
+}
 .pagination li a {
-	color: #5591b4;
+	border-radius:0 !important;
+	background-color: #fff59b;
+	color: #6c6c6c;
+	margin:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align: center;
+	border:0;
 }
 .pagination li.active a {
-	background-color: #5591b4;
+	background-color: #CBC37B;
 }
 
 @media screen and (max-width: 768px) {
+	.pagination-wrap {
+		margin:0 -21px;
+	}
 	.pagination {
 		width:100%;
 		display: -webkit-flex;
@@ -270,6 +293,7 @@ nav {
 	.pagination li:first-child, .pagination li:last-child {
 		-webkit-flex: 1;
 				flex: 1;	
+		font-weight:bold;
 	}
 	.pagination li a {
 		width:100%;
