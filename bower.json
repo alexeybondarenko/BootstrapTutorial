@@ -12,5 +12,9 @@
     "tutotial",
     "example"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "*"
+    "jquery": "*"
+  }
 }
