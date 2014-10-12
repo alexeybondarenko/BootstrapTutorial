@@ -49,8 +49,32 @@ nav {
 	.nav.nav-pills li a {
 		text-align: center;
 	}
+	
 	.nav.nav-pills li.active a {
 		font-weight: bold;
+	}
+
+	.nav.nav-close li {
+		display: none;
+	}
+	.nav.nav-close li.active {
+		display: block;
+	}
+	.nav.nav-close li.active a {
+		text-align: left;	
+	}
+	.nav.nav-close:after {
+		content:'\e012';
+		font-family: 'Glyphicons Halflings';
+		color:white;
+		position: absolute;
+		right:0;
+		width:40px;
+		height:40px;
+		font-size:18px;
+		background-color: rgba(0,0,0,.2);
+		text-align: center;
+		line-height: 40px;
 	}
 }
 
