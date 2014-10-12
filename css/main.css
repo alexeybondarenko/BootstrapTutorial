@@ -156,3 +156,17 @@ nav {
 	padding:10px 30px;
 	border-radius: 4px;
 }
+
+/*********
+* Header *
+**********/
+
+.header {
+	padding:20px 0;
+}
+.header-title {
+	display: none;
+}
+.header-img {
+
+}
