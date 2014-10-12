@@ -1,0 +1,16 @@
+{
+  "name": "BootstrapTutorial",
+  "version": "0.0.1",
+  "authors": [
+    "Alexey Bondarenko <alexeybondarenko@me.com>"
+  ],
+  "description": "example tutorial of using bootstrap for fast site development.",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "blog",
+    "tutotial",
+    "example"
+  ],
+  "license": "MIT"
+}
